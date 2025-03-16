@@ -5,7 +5,7 @@ import ee
 service_account = "sindhu@imperial-data-453906-t8.iam.gserviceaccount.com"
 key_path = "gee_key.json"  # Path to your JSON key file
 
-credentials = ee.ServiceAccountCredentials(service_account, key_path)
+credentials = ee.ServiceAccountCredentials(service_account)
 ee.Initialize(credentials)
 
 st.title("Satellite Image Segmentation")
